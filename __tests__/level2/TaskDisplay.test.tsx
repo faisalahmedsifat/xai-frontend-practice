@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import TaskDisplay from '../../src/components/level2/TaskDisplay';
-import { Task } from '../../src/types';
+import TaskDisplay from '@/components/level2/TaskDisplay';
+import { Task } from '@/types';
 
 describe('TaskDisplay Component', () => {
   const mockTasks: Task[] = [

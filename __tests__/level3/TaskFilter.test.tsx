@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import TaskFilter from '../../src/components/TaskFilter';
-import { TaskFilter as TaskFilterType } from '../../src/types';
+import TaskFilter from '@/components/level3/TaskFilter';
+import { TaskFilter as TaskFilterType } from '@/types';
 
 describe('TaskFilter Component', () => {
   const mockOnFilterChange = jest.fn();

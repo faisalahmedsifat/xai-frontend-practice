@@ -2,11 +2,11 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import userEvent from '@testing-library/user-event';
-import { TaskForm } from '../../src/components/level10/TaskForm';
-import { TaskDetail } from '../../src/components/level10/TaskDetail';
-import { TaskList } from '../../src/components/level10/TaskList';
-import { TaskApp } from '../../src/components/level10/TaskApp';
-import { Task } from '../../src/types';
+import { TaskForm } from '@/components/level10/TaskForm';
+import { TaskDetail } from '@/components/level10/TaskDetail';
+import { TaskList } from '@/components/level10/TaskList';
+import { TaskApp } from '@/components/level10/TaskApp';
+import { Task } from '@/types';
 
 // Add jest-axe custom matchers
 expect.extend(toHaveNoViolations);

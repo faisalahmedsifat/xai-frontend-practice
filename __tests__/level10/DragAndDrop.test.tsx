@@ -2,9 +2,9 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import { DraggableTaskList } from '../../src/components/level10/DraggableTaskList';
-import { KanbanBoard } from '../../src/components/level10/KanbanBoard';
-import { Task, TaskStatus } from '../../src/types';
+import { DraggableTaskList } from '@/components/level10/DraggableTaskList';
+import { KanbanBoard } from '@/components/level10/KanbanBoard';
+import { Task, TaskStatus } from '@/types';
 
 // Mock data for testing
 const mockTasks: Task[] = [

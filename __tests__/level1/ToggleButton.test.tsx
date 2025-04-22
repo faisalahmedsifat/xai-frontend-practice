@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import ToggleButton from '../../src/components/level1/ToggleButton';
+import ToggleButton from '@/components/level1/ToggleButton';
 
 describe('ToggleButton Component', () => {
   it('should render the button with the correct text hidden initially', () => {

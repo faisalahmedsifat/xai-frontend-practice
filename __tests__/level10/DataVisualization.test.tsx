@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskStatsChart } from '../../src/components/level10/TaskStatsChart';
-import { BurndownChart } from '../../src/components/level10/BurndownChart';
-import { PriorityDistribution } from '../../src/components/level10/PriorityDistribution';
-import { Task } from '../../src/types';
+import { TaskStatsChart } from '@/components/level10/TaskStatsChart';
+import { BurndownChart } from '@/components/level10/BurndownChart';
+import { PriorityDistribution } from '@/components/level10/PriorityDistribution';
+import { Task } from '@/types';
 
 // Mock recharts components
 jest.mock('recharts', () => {

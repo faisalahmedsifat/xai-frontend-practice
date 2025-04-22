@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskStateProvider } from '../../src/components/level9/TaskStateProvider';
-import { OptimisticTaskList } from '../../src/components/level9/OptimisticTaskList';
-import { TaskService } from '../../src/services/TaskService';
-import { AppState } from '../../src/types';
+import { TaskStateProvider } from '@/components/level9/TaskStateProvider';
+import { OptimisticTaskList } from '@/components/level9/OptimisticTaskList';
+import { TaskService } from '@/services/TaskService';
+import { AppState } from '@/types';
 
 // Mock the task service
-jest.mock('../../src/services/TaskService', () => ({
+jest.mock('@/services/TaskService', () => ({
   TaskService: {
     createTask: jest.fn(),
     updateTask: jest.fn(),

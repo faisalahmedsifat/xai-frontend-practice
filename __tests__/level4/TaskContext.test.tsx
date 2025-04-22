@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskProvider, TaskContext } from '../../src/context/TaskContext';
-import { Task } from '../../src/types';
+import { TaskProvider, TaskContext } from '@/context/TaskContext';
+import { Task } from '@/types';
 
 // Test component that consumes the TaskContext
 const TaskConsumer = () => {

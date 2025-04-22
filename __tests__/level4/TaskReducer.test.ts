@@ -1,6 +1,6 @@
-import { taskReducer } from '../../src/context/TaskReducer';
-import { TaskState, TaskAction } from '../../src/types';
-import { Task } from '../../src/types';
+import { taskReducer } from '@/context/TaskReducer';
+import { TaskState, TaskAction } from '@/types';
+import { Task } from '@/types';
 
 describe('TaskReducer', () => {
   const mockTask1: Task = {

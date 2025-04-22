@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskItem } from '../../src/components/level7/TaskItem';
-import { TaskList } from '../../src/components/level7/TaskList';
-import { Task } from '../../src/types';
+import { TaskItem } from '@/components/level7/TaskItem';
+import { TaskList } from '@/components/level7/TaskList';
+import { Task } from '@/types';
 
 // Mock for React.memo to track render counts
 jest.mock('react', () => {

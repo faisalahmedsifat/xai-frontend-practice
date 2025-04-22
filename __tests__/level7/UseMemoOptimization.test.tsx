@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskDashboard } from '../../src/components/level7/TaskDashboard';
-import { Task } from '../../src/types';
+import { TaskDashboard } from '@/components/level7/TaskDashboard';
+import { Task } from '@/types';
 
 // Mock React's useMemo to track its usage
 jest.mock('react', () => {

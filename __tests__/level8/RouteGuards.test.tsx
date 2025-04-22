@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import { TaskDetailsPage } from '../../src/components/level8/TaskDetailsPage';
-import { ProtectedRoute } from '../../src/components/level8/ProtectedRoute';
+import { TaskDetailsPage } from '@/components/level8/TaskDetailsPage';
+import { ProtectedRoute } from '@/components/level8/ProtectedRoute';
 import { mockRouter } from '../test-utils/mockRouter';
-import { TaskService } from '../../src/services/TaskService';
+import { TaskService } from '@/services/TaskService';
 
 // Mock Next.js router
 jest.mock('next/router', () => ({
@@ -11,7 +11,7 @@ jest.mock('next/router', () => ({
 }));
 
 // Mock task service
-jest.mock('../../src/services/TaskService', () => ({
+jest.mock('@/services/TaskService', () => ({
   TaskService: {
     getTaskById: jest.fn(),
     getAllTasks: jest.fn()

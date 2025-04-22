@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { NavigationBar } from '../../src/components/level8/NavigationBar';
-import { TaskCard } from '../../src/components/level8/TaskCard';
+import { NavigationBar } from '@/components/level8/NavigationBar';
+import { TaskCard } from '@/components/level8/TaskCard';
 import { mockRouter } from '../test-utils/mockRouter';
 
 // Mock Next.js router

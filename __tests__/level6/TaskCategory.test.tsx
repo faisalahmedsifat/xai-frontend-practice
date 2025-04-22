@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskCategory } from '../../src/components/level6/TaskCategory';
-import { Task } from '../../src/types';
+import { TaskCategory } from '@/components/level6/TaskCategory';
+import { Task } from '@/types';
 
 const mockTasks: Task[] = [
   { id: '1', title: 'Task 1', completed: false, priority: 'high' },

@@ -1,20 +1,20 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskApp } from '../../src/components/level7/TaskApp';
+import { TaskApp } from '@/components/level7/TaskApp';
 
 // Mock the lazy-loaded components to simulate code splitting
-jest.mock('../../src/components/level7/TaskDashboard', () => ({
+jest.mock('@/components/level7/TaskDashboard', () => ({
   __esModule: true,
   default: () => <div data-testid="task-dashboard">Task Dashboard Content</div>
 }));
 
-jest.mock('../../src/components/level7/Statistics', () => ({
+jest.mock('@/components/level7/Statistics', () => ({
   __esModule: true,
   default: () => <div data-testid="statistics">Statistics Content</div>
 }));
 
-jest.mock('../../src/components/level7/Settings', () => ({
+jest.mock('@/components/level7/Settings', () => ({
   __esModule: true,
   default: () => <div data-testid="settings">Settings Content</div>
 }));

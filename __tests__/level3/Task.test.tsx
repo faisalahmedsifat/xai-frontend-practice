@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Task from '../../src/components/Task';
-import { Task as TaskType } from '../../src/types';
+import Task from '@/components/level3/Task';
+import { Task as TaskType } from '@/types';
 
 describe('Task Component', () => {
   const mockTask: TaskType = {

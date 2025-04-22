@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import TaskList from '../../src/components/TaskList';
-import { Task as TaskType } from '../../src/types';
+import TaskList from '@/components/level3/TaskList';
+import { Task as TaskType } from '@/types';
 
 describe('TaskList Component', () => {
   const mockTasks: TaskType[] = [

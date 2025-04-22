@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskStateProvider } from '../../src/components/level9/TaskStateProvider';
-import { TaskHistoryViewer } from '../../src/components/level9/TaskHistoryViewer';
-import { TaskDetailWithHistory } from '../../src/components/level9/TaskDetailWithHistory';
-import { AppState, TaskHistoryEntry } from '../../src/types';
+import { TaskStateProvider } from '@/components/level9/TaskStateProvider';
+import { TaskHistoryViewer } from '@/components/level9/TaskHistoryViewer';
+import { TaskDetailWithHistory } from '@/components/level9/TaskDetailWithHistory';
+import { AppState, TaskHistoryEntry } from '@/types';
 
 // Helper to create initial test state with task history
 const createTestState = (): AppState => {

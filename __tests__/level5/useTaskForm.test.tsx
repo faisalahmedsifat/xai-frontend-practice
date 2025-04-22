@@ -2,8 +2,8 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { renderHook, act } from '@testing-library/react-hooks';
-import { useTaskForm } from '../../src/hooks/useTaskForm';
-import { TaskFormData } from '../../src/types';
+import { useTaskForm } from '@/hooks/useTaskForm';
+import { TaskFormData } from '@/types';
 
 // Test component that uses the useTaskForm hook
 const TestComponent = () => {

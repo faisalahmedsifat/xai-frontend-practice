@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskStateProvider, useTaskState } from '../../src/components/level9/TaskStateProvider';
-import { TaskManager } from '../../src/components/level9/TaskManager';
-import { AppState, Task } from '../../src/types';
+import { TaskStateProvider, useTaskState } from '@/components/level9/TaskStateProvider';
+import { TaskManager } from '@/components/level9/TaskManager';
+import { AppState, Task } from '@/types';
 
 // Mock initial state with tasks
 const createTestState = (): AppState => ({

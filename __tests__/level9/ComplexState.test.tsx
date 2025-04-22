@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { TaskStateProvider, useTaskState } from '../../src/components/level9/TaskStateProvider';
-import { Task, AppState, TaskPriority, TaskStatus } from '../../src/types';
+import { TaskStateProvider, useTaskState } from '@/components/level9/TaskStateProvider';
+import { Task, AppState, TaskPriority, TaskStatus } from '@/types';
 
 // Test component that consumes the complex state
 const TestStateConsumer: React.FC = () => {

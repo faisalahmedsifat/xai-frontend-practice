@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { TaskStatistics } from '../../src/components/level6/TaskStatistics';
-import { Task } from '../../src/types';
+import { TaskStatistics } from '@/components/level6/TaskStatistics';
+import { Task } from '@/types';
 
 const mockTasks: Task[] = [
   { id: '1', title: 'Task 1', completed: false, priority: 'high', dueDate: new Date(2023, 5, 15) },

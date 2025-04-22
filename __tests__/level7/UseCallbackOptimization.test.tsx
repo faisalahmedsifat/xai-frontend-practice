@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { TaskBoard } from '../../src/components/level7/TaskBoard';
-import { Task } from '../../src/types';
+import { TaskBoard } from '@/components/level7/TaskBoard';
+import { Task } from '@/types';
 
 // Mock React's useCallback to track its usage
 jest.mock('react', () => {

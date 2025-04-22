@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { VirtualizedTaskList } from '../../src/components/level10/VirtualizedTaskList';
-import { VirtualizedKanbanBoard } from '../../src/components/level10/VirtualizedKanbanBoard';
-import { Task } from '../../src/types';
+import { VirtualizedTaskList } from '@/components/level10/VirtualizedTaskList';
+import { VirtualizedKanbanBoard } from '@/components/level10/VirtualizedKanbanBoard';
+import { Task } from '@/types';
 
 // Mock react-window components
 jest.mock('react-window', () => {

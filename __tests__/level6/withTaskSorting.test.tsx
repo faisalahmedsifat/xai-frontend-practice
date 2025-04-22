@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { withTaskSorting } from '../../src/components/level6/withTaskSorting';
-import { Task } from '../../src/types';
+import { withTaskSorting } from '@/components/level6/withTaskSorting';
+import { Task } from '@/types';
 
 // Mock basic task list component
 const TaskList: React.FC<{ tasks: Task[] }> = ({ tasks }) => (
