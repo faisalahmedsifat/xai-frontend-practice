@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import TaskForm from '../../src/components/TaskForm';
+import TaskForm from '../../src/components/level2/TaskForm';
 import { Task } from '../../src/types';
 
 describe('TaskForm Component', () => {

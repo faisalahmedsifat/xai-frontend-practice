@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import TaskDisplay from '../../src/components/TaskDisplay';
+import '@testing-library/jest-dom';
+import TaskDisplay from '../../src/components/level2/TaskDisplay';
 import { Task } from '../../src/types';
 
 describe('TaskDisplay Component', () => {

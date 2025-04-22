@@ -1,5 +1,5 @@
 import React from 'react';
-import { ToggleButtonProps } from '../types';
+import { ToggleButtonProps } from '../../types';
 
 /**
  * A button that toggles content visibility when clicked.
