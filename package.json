@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:level1": "jest --testPathPattern=__tests__/level1",
+    "test:level1": "jest --testPathPattern=\"__tests__/level1(/|$)\"",
     "test:level2": "jest --testPathPattern=__tests__/level2",
     "test:level3": "jest --testPathPattern=__tests__/level3",
     "test:level4": "jest --testPathPattern=__tests__/level4",

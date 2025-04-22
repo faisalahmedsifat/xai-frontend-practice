@@ -1,5 +1,6 @@
 import React from 'react';
 import { ToggleButtonProps } from '../../types';
+import {useState} from 'react'
 
 /**
  * A button that toggles content visibility when clicked.
@@ -13,16 +14,21 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
   initialVisible = false,
   onToggle
 }) => {
-  // TODO: Implement state to track if the content is visible
-  // Hint: Use the useState hook with initialVisible as the initial value
+  const [isVisible, setIsVisible] = useState(initialVisible);
   
   // TODO: Implement a toggle function that updates the visibility state
   // and calls the onToggle callback if provided
+  function handleToggle(){
+    const visibility = !isVisible;
+    setIsVisible(visibility);
+    if (onToggle) onToggle(visibility)
+  }
   
   return (
     <div className="toggle-container">
       <button 
         className={`toggle-button ${className}`}
+        onClick={handleToggle}
         // TODO: Add onClick handler to toggle visibility
         // TODO: Add aria-expanded attribute based on visibility state
       >
@@ -30,7 +36,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
       </button>
       
       {/* TODO: Conditionally render the text based on visibility state */}
-      {/* {isVisible && <div className="toggle-content">{text}</div>} */}
+      {isVisible && <div className="toggle-content">{text}</div>}
     </div>
   );
 };

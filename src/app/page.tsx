@@ -1,4 +1,4 @@
-import ToggleButton from "@/components/level1/ToggleButton";
+import ToggleButton from '@/components/level1/ToggleButton'
 
 export default function Home() {
   return (
