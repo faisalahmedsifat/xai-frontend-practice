@@ -6,7 +6,19 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:level1": "jest --testPathPattern=__tests__/level1",
+    "test:level2": "jest --testPathPattern=__tests__/level2",
+    "test:level3": "jest --testPathPattern=__tests__/level3",
+    "test:level4": "jest --testPathPattern=__tests__/level4",
+    "test:level5": "jest --testPathPattern=__tests__/level5",
+    "test:level6": "jest --testPathPattern=__tests__/level6",
+    "test:level7": "jest --testPathPattern=__tests__/level7",
+    "test:level8": "jest --testPathPattern=__tests__/level8",
+    "test:level9": "jest --testPathPattern=__tests__/level9",
+    "test:level10": "jest --testPathPattern=__tests__/level10"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -22,6 +34,13 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "@eslint/eslintrc": "^3",
+    "jest": "^29.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/user-event": "^14.0.0",
+    "jest-environment-jsdom": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "babel-jest": "^29.0.0"
   }
 }
