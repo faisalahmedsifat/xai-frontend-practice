@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { ToggleButtonProps } from '../../types';
 import {useState} from 'react'
@@ -23,13 +24,20 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
     setIsVisible(visibility);
     if (onToggle) onToggle(visibility)
   }
+
+  function handleKeyDown(e: React.KeyboardEvent<HTMLButtonElement>){
+    if (e.key === ' ' || e.key === 'Enter'){
+      handleToggle();
+    }
+  }
   
   return (
     <div className="toggle-container">
       <button 
         className={`toggle-button ${className}`}
         onClick={handleToggle}
-        // TODO: Add onClick handler to toggle visibility
+        onKeyDown={handleKeyDown}
+        aria-expanded={isVisible}
         // TODO: Add aria-expanded attribute based on visibility state
       >
         Toggle
